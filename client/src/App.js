@@ -23,7 +23,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <Route path='/' component={MovieList}/>
+        <Route exact path='/' component={MovieList}/>
         <Route path='/movies/:id' component={Movie}/>
       </div>
     );
